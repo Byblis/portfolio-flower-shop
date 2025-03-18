@@ -1,0 +1,664 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EADCF8; /* 薄紫 */ 
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 0;
+    width: 150px;  /* 横幅決めちゃう */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.dropdown li {
+    display: block;  /* flexの影響を消す */
+    padding: 5px 10px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: block;  /* 全体をクリックできるように */
+}
+
+/* マウスを乗せた時に表示 */
+.has-dropdown:hover .dropdown {
+    display: block;
+    z-index: 1000;
+}
+
+/* ハンバーガー */
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.access-page {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.access-page h1 {
+    font-size: 2rem;
+    color: #4A362A;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.map-container img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shop-info {
+    background: #fff0f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.shop-info h2 {
+    font-size: 1.5rem;
+    color: #d63384;
+}
+
+.shop-info p {
+    font-size: 1rem;
+    color: #4A362A;
+    margin: 5px 0;
+}
+
+.back-button {
+    margin-top: 30px;
+}
+
+.back-button a {
+    text-decoration: none;
+    background-color: #ff85c0;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #d63384;
+}
+
+
+.shop-name {
+    text-align: center;
+    font-size: 3rem;  /* かなり大きめに */
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 50;    
+}
+
+
+.subtitle {
+    text-align: center;
+    font-size: 1.5rem;  /* 少し大きめ */
+    color: #8B5E3C;  /* 落ち着いたブラウン系 */
+    margin-top: 10px; /* タイトルとの間に少し余白 */
+    font-weight: bold; /* 太字で目立たせる */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center;  /* 垂直方向に中央揃え（必要なら） */
+}
+
+.site-intro {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #8B5E3C; 
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center;  /* 垂直方向に中央揃え（必要なら） */
+}
+}
+
+/* NEWS */
+.news ul {
+    list-style: none;  /* 「・」を消す */
+    max-height: 120px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    cursor: none; /* NEWS のスクロールエリアでも通常のカーソルを消す */
+    
+}
+    
+.news {
+    width: 80%;  /* 中央にするための横幅 */
+    max-width: 600px;  /* 大きくなりすぎないように */
+    margin: 30px auto;  /* 上下30pxで、左右は自動＝中央寄せ */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.news h2 {
+    text-align: center;  /* タイトルはセンター */
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.news li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.news li:last-child {
+    border-bottom: none;
+}
+
+/* ドロップダウン */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    z-index: 10;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+.reviews {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #fff0f6; /* かわいいピンク背景 */
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h2 {
+    font-size: 1.8rem;
+    color: #d63384; /* かわいいピンク */
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review {
+    width: 280px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    border: 3px solid #ff85c0;
+}
+
+.review::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 15px;
+    border-style: solid;
+    border-color: #ff85c0 transparent transparent transparent; /* 吹き出し風 */
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff85c0;
+    margin-bottom: 10px;
+}
+
+.reviews {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #fff0f6; /* かわいいピンク背景 */
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h2 {
+    font-size: 1.8rem;
+    color: #d63384; /* かわいいピンク */
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review {
+    width: 280px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    border: 3px solid #ff85c0;
+}
+
+.review::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 15px;
+    border-style: solid;
+    border-color: #ff85c0 transparent transparent transparent; /* 吹き出し風 */
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff85c0;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #4A362A;
+    margin-bottom: 10px;
+}
+
+.review span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* レスポンシブ対応（スマホで2列にする） */
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.contact-button {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #ff4081; /* ピンク系の目立つ色 */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #e6005c;
+}
+
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+    nav.show {
+        display: flex;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+
+.sns-links {
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向の位置調整 */
+    gap: 20px; /* アイコン同士の間隔 */
+    margin-top: 20px;
+}
+
+.sns-links i {
+    font-size: 60px;  /* アイコンのサイズを大きく */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* X（旧Twitter）は公式カラーの青 */
+.sns-links .fa-x-twitter {
+    color: #1DA1F2;
+}
+
+/* Instagram はレインボー風のグラデーション */
+.sns-links .fa-instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ホバー時のアクション */
+.sns-links i:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fall {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(20px) translateY(25vh) rotate(45deg);
+    }
+    50% {
+        transform: translateX(-20px) translateY(50vh) rotate(90deg);
+    }
+    75% {
+        transform: translateX(15px) translateY(75vh) rotate(135deg);
+    }
+    100% {
+        transform: translateX(-15px) translateY(100vh) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+.flower-petal {
+    position: fixed;
+    top: -10px;
+    left: 50%;
+    opacity: 0.8;
+    pointer-events: none; /* クリックを邪魔しない */
+    animation: fall 8s linear infinite;
+    z-index: 9999; /* 手前に表示 */
+    height: auto; /* 縦横比を維持 */
+}
+#shop-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* 縦中央揃え */
+    font-size: 5rem;
+    font-weight: bold;
+    height: 100px;  /* 必要なら高さを調整 */
+    overflow: visible;  /* 非表示にならないように */
+    margin-top: 50px;
+}
+
+#shop-name span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-100px); /* 上から落ちる */
+    animation: drop 0.8s ease-out forwards;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 文字ごとにアニメーションの遅延を設定 */
+#shop-name span:nth-child(1) { animation-delay: 0s; }
+#shop-name span:nth-child(2) { animation-delay: 0.2s; }
+#shop-name span:nth-child(3) { animation-delay: 0.4s; }
+#shop-name span:nth-child(4) { animation-delay: 0.6s; }
+#shop-name span:nth-child(5) { animation-delay: 0.8s; }
+#shop-name span:nth-child(6) { animation-delay: 1s; }
+
+.review-container {
+    display: flex;
+    flex-direction: row; /* 横並びにする */
+    flex-wrap: nowrap; /* 折り返さない（1段にする） */
+    gap: 20px;
+    overflow-x: auto; /* 横スクロールを有効化 */
+    scroll-behavior: smooth; /* スクロールを滑らかに */
+    white-space: nowrap; /* テキストが折り返されないように */
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Firefoxのスクロールバー非表示 */
+}
+
+/* スクロールバーを非表示にする */
+.review-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safariのスクロールバー非表示 */
+}
+
+.review {
+    flex: 0 0 280px; /* 固定幅で横並びにする */
+    white-space: normal; /* テキストの折り返しを許可 */
+}
+.contact {
+    text-align: center;
+    background-color: #fff0f6;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* フォームの最大幅を調整 */
+    margin: 50px auto;
+}
+
+.contact h2 {
+    font-size: 2rem; /* タイトルを少し大きく */
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* 縦並びにする */
+    gap: 20px; /* 項目の間隔を広げる */
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8B5E3C;
+    width: 100%;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%; /* フル幅で表示 */
+    max-width: 400px; /* 大きくなりすぎないように */
+    padding: 15px; /* 入力欄を大きく */
+    font-size: 1.2rem; /* 文字を大きく */
+    border: 2px solid #ff85c0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 120px; /* メッセージ欄を大きく */
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 250px; /* ボタンの最大幅 */
+}
+
+button:hover {
+    background-color: #e6005c;
+}
+
+body, a, button, input, textarea, .news ul {
+    cursor: none; /* すべての要素で元のカーソルを消す */
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 40px; /* 丸のサイズ */
+    height: 40px;
+    background-color: #66ccff; /* 通常時の水色 */
+    border-radius: 50%; /* 丸くする */
+    pointer-events: none; /* クリックの邪魔をしない */
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease; /* 色を変えるアニメーション */
+}
+
+/* クリックできる要素（リンク・ボタン）の上で薄紫に変える */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor,
+input:hover ~ .custom-cursor,
+textarea:hover ~ .custom-cursor,
+.news ul:hover ~ .custom-cursor {
+    background-color: #c3a2ff; /* 薄紫 */
+}
+
+.seasonal-flowers {
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.flower-item {
+    display: flex;
+    align-items: center;
+    opacity: 0; /* 最初は見えない */
+    transform: translateX(-100px); /* 初期位置（左から登場） */
+    transition: all 1s ease-out;
+    margin-bottom: 50px;
+}
+
+/* 🌼 ミモザ（左→右） */
+.flower-item.left img {
+    order: 1; /* 画像を右に配置 */
+    margin-left: 20px;
+}
+
+/* 🌷 チューリップ（右→左） */
+.flower-item.right {
+    flex-direction: row-reverse; /* 画像を右に固定 */
+    transform: translateX(100px); /* 右から登場 */
+}
+
+.flower-item img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flower-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.flower-item.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.monthly-recommendation {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d63384; /* かわいいピンク */
+}
+
+header {
+    position: fixed;  /* ヘッダーを固定 */
+    top: 0;  /* 画面上部に固定 */
+    left: 0;
+    width: 100%;  /* 画面幅いっぱい */
+    background-color: #fff0f6;  /* ふんわりピンク（好きな色に変更OK） */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* 影をつけて浮いてる感 */
+    z-index: 1000;  /* 他の要素より前面に */
+    padding: 10px 20px;
+}
+
+body {
+    padding-top: 60px;  /* 固定ヘッダーの高さ分を確保（高さに応じて調整） */
+}
+
+
+
+
+
+
+
+
+
+
+
+

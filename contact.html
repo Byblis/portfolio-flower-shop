@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - カルモのひたい</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="menu-btn" onclick="toggleMenu()">≡</div>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="has-dropdown">
+                    <a href="#">商品</a>
+                    <ul class="dropdown">
+                        <li><a href="#">花束</a></li>
+                        <li><a href="#">ドライフラワー</a></li>
+                        <li><a href="#">鉢植え</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">オーダー</a>
+                    <ul class="dropdown">
+                        <li><a href="#">お祝い花</a></li>
+                        <li><a href="#">定期便</a></li>
+                        <li><a href="#">イベント装花</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="access.html">アクセス</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="contact">
+    <h2>お問い合わせ</h2>
+    <form id="contact-form">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" placeholder="例: 山田 太郎" required>
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="例: example@gmail.com" required>
+
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" rows="5" placeholder="お問い合わせ内容を入力してください" required></textarea>
+
+        <button type="submit">送信する</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+
+<footer>
+    <p>© 2025 カルモのひたい</p>
+</footer>
+
+</body>
+</html>

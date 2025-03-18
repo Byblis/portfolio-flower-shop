@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カルモのひたい</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <script src="cursor.js" defer></script>
+<script src="petal.js" defer></script>
+
+</head>
+<body>
+
+<header>
+    <div class="menu-btn" onclick="toggleMenu()">≡</div>
+    <nav id="navMenu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="has-dropdown">
+                <a href="#">商品</a>
+                <ul class="dropdown">
+                    <li><a href="#">花束</a></li>
+                    <li><a href="#">アレンジメント</a></li>
+                    <li><a href="#">ドライフラワー</a></li>
+                    <li><a href="#">プリザーブドフラワー</a></li>
+                    <li><a href="#">鉢植え</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="#">オーダー</a>
+                <ul class="dropdown">
+                    <li><a href="#">花束・アレンジメント</a></li>
+                    <li><a href="#">スタンド花</a></li>
+                    <li><a href="#">定期便</a></li>
+                    <li><a href="#">ブライダル</a></li>
+                    <li><a href="#">仏事</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="access.html">アクセス</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="shop-name">
+    <span>カ</span><span>ル</span><span>モ</span><span>の</span><span>ひ</span><span>たい</span>
+</div>
+
+
+<h2 class="subtitle">花とともに、日常に彩りを</h2>
+
+
+<main>
+    <section class="slideshow">
+        <div class="slides">
+            <img src="images/photo1.jpg" alt="写真1">
+            <img src="images/photo2.jpg" alt="写真2">
+            <img src="images/photo3.jpg" alt="写真3">
+            <img src="images/photo4.jpg" alt="写真4">
+            <img src="images/photo5.jpg" alt="写真5">
+        </div>
+    </section>
+
+    <p class="site-intro">
+        こだわりの花束とアレンジメントをお届けします。<br>
+        お祝い、お悔やみ、日常の彩りにぴったりな花を厳選！
+    </p>
+    
+
+    <section class="news">
+        <h2>NEWS</h2>
+        <ul>
+            <li>3月のおすすめフラワーは「ミモザ」！</li>
+            <li>春の花束オーダー受付中です🌷</li>
+            <li>3/14ホワイトデーギフトのご予約スタート</li>
+            <li>卒業・送別シーズンの花束承ります</li>
+            <li>ドライフラワー新作リース入荷しました</li>
+            <li>花瓶いらずのブーケシリーズ販売中</li>
+            <li>お花の定期便、春キャンペーン開催中！</li>
+            <li>3月のおすすめフラワーは「さくら」！</li>
+            <li>春の花束オーダー受付中🌷</li>
+            <li>春の失敗しない水やり管理💧</li>
+            <li>送別シーズンの花束承ります</li>
+            <li>ドライフラワー新作リリース入荷しました</li>
+            <li>花瓶いらずのブーケシリーズ販売中</li>
+            <li>お花の定期便、春キャンペーン開催中！</li>
+            <li>母の日ギフトの早期予約受付開始🎁</li>
+            <li>新作プリザーブドフラワーアレンジ登場🌿</li>
+            <li>ウェディングブーケのオーダーメイド受付中💒</li>
+            <li>花と香りのワークショップ開催決定✨</li>
+            <li>店舗限定！季節の花束セットがお買い得🌼</li>
+            <li>春のリース作り体験イベント開催🎨</li>
+            <li>開店祝い用スタンドフラワーのご予約受付中🏢</li>
+            <li>人気のラベンダー入荷しました！💜</li>
+            <li>胡蝶蘭の特別割引キャンペーン実施中🎊</li>
+            <li>法人向け定期装花プランのお申込み受付中🏢</li>
+            <li>フラワーギフトの全国配送スタート📦💐</li>
+            <li>新色のバラが入荷しました！🌹</li>
+            <li>オフィスに癒しを！観葉植物フェア開催🌿</li>
+            <li>花束のラッピングを無料サービス中🎀</li>
+            <li>記念日におすすめの特別フラワーアレンジ販売中🎉</li>
+            <li>夏のひまわりフェア開催予定🌻</li>
+            <li>お花のサブスク「毎月届く季節の花」受付開始📅</li>
+            <li>フローリストによる無料相談会開催💬</li>
+        </ul>
+    </section>
+
+    <section class="monthly-recommendation">
+        <h2>３月の花便り</h2>
+    </section>
+
+    <section class="seasonal-flowers">
+        <!-- 🌼 1枚目：ミモザ（左→右） -->
+        <div class="flower-item left">
+            <img src="images/mimosa_bouquet.png" alt="ミモザの花束">
+            <div class="flower-text">
+                <h2>太陽の光を浴びたような、黄金色のミモザをたっぷり束ねました</h2>
+                <p>ふんわりとした優しい香りと、春の訪れを感じるミモザブーケ。</p>
+            </div>
+        </div>
+    
+        <!-- 🌷 2枚目：チューリップ（右→左） -->
+        <div class="flower-item right">
+            <div class="flower-text">
+                <h2>色とりどりのチューリップブーケで春を満喫</h2>
+                <p>鮮やかなカラーのチューリップをたっぷり束ねました。元気がもらえる花束です。</p>
+            </div>
+            <img src="images/tulip_bouquet.png" alt="チューリップの花束">
+        </div>
+    </section>
+    
+    
+
+    <section class="reviews">
+        <h2>お客様の声</h2>
+        <div class="review-container">
+            <div class="review">
+                <div class="avatar"><img src="images/user1.png" alt="ユーザー"></div>
+                <p>「母の日にプレゼントしました！とても綺麗で母も大喜びでした🌸」</p>
+                <span>- 30代 女性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user2.png" alt="ユーザー"></div>
+                <p>「注文してすぐ届きました！花の品質も良くて満足です✨」</p>
+                <span>- 40代 男性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user3.png" alt="ユーザー"></div>
+                <p>「お店の対応がとても丁寧で、安心して注文できました！🌿」</p>
+                <span>- 20代 女性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user4.png" alt="ユーザー"></div>
+                <p>「写真通りの素敵な花束が届いて感動しました！🎁」</p>
+                <span>- 50代 男性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user1.png" alt="ユーザー"></div>
+                <p>「母の日にプレゼントしました！とても綺麗で母も大喜びでした🌸」</p>
+                <span>- 30代 女性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user2.png" alt="ユーザー"></div>
+                <p>「注文してすぐ届きました！花の品質も良くて満足です✨」</p>
+                <span>- 40代 男性</span>
+            </div>        
+            <div class="review">
+                <div class="avatar"><img src="images/user3.png" alt="ユーザー"></div>
+                <p>「お店の対応がとても丁寧で、安心して注文できました！🌿」</p>
+                <span>- 20代 女性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user4.png" alt="ユーザー"></div>
+                <p>「写真通りの素敵な花束が届いて感動しました！🎁」</p>
+                <span>- 50代 男性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user5.png" alt="ユーザー"></div>
+                <p>「結婚記念日にぴったりの花束を作っていただきました💍」</p>
+                <span>- 40代 女性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user6.png" alt="ユーザー"></div>
+                <p>「おしゃれなアレンジメントで、友人もとても喜んでくれました🎨」</p>
+                <span>- 30代 男性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user7.png" alt="ユーザー"></div>
+                <p>「急な注文にも対応してくれて、本当に助かりました！🙏」</p>
+                <span>- 50代 女性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user8.png" alt="ユーザー"></div>
+                <p>「お花の香りがとても良く、癒されました🌿」</p>
+                <span>- 20代 男性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user9.png" alt="ユーザー"></div>
+                <p>「初めて利用しましたが、また注文したいと思います📦」</p>
+                <span>- 30代 女性</span>
+            </div>
+            <div class="review">
+                <div class="avatar"><img src="images/user10.png" alt="ユーザー"></div>
+                <p>「季節のお花がセンス良くアレンジされていて大満足です！🌼」</p>
+                <span>- 40代 男性</span>
+            </div>        
+        </div>
+    </section>
+    
+<a href="contact.html" class="contact-button">お問い合わせはこちら</a>
+
+</main>
+
+<footer>
+    <div class="sns-links">
+        <a href="https://twitter.com/あなたのアカウント" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/あなたのアカウント" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    
+    
+    
+    <p>© 2025 カルモのひたい</p>
+</footer>
+<script src="cursor.js"></script>
+
+</body>
+</html>
