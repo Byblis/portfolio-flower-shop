@@ -139,7 +139,10 @@ nav a {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     color: #4a3c2f;
-    margin-top: 50;    
+    margin-top: 50;
+    word-wrap: break-word; /* 長い単語を折り返す */
+    white-space: normal; /* 必要に応じて折り返し */
+    font-size: clamp(2rem, 5vw, 5rem); /* 画面幅に応じたフォントサイズ */    
 }
 
 
