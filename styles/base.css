@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EADCF8;
+    padding-top: 60px;
+  }
+  
+  body, a, button, input, textarea, .news ul {
+    cursor: none;
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #66ccff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover ~ .custom-cursor,
+  button:hover ~ .custom-cursor,
+  input:hover ~ .custom-cursor,
+  textarea:hover ~ .custom-cursor,
+  .news ul:hover ~ .custom-cursor {
+    background-color: #c3a2ff;
+  }

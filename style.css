@@ -466,12 +466,13 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
     font-weight: bold;
     height: 100px;
     overflow: visible;
     margin-top: 50px;
     font-family: 'Dancing Script', cursive !important; /* フォント適用 */
+    white-space: nowrap; /* ← 文字を折り返さない！ */
+    font-size: clamp(2rem, 6vw, 5rem);
 }
 
 #shop-name span {
@@ -677,15 +678,3 @@ header {
 body {
     padding-top: 60px;  /* 固定ヘッダーの高さ分を確保（高さに応じて調整） */
 }
-
-
-
-
-
-
-
-
-
-
-
-

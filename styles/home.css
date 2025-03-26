@@ -1,0 +1,124 @@
+#shop-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 100px;
+    overflow: visible;
+    margin-top: 50px;
+    font-family: 'Dancing Script', cursive !important;
+    white-space: nowrap;
+    font-size: clamp(2rem, 6vw, 5rem);
+  }
+  
+  #shop-name span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: drop 0.8s ease-out forwards;
+    animation-fill-mode: both;
+    font-family: 'Dancing Script', cursive !important;
+  }
+  
+  @keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #shop-name span:nth-child(1) { animation-delay: 0s; }
+  #shop-name span:nth-child(2) { animation-delay: 0.2s; }
+  #shop-name span:nth-child(3) { animation-delay: 0.4s; }
+  #shop-name span:nth-child(4) { animation-delay: 0.6s; }
+  #shop-name span:nth-child(5) { animation-delay: 0.8s; }
+  #shop-name span:nth-child(6) { animation-delay: 1s; }
+  
+  .subtitle, .site-intro {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #8B5E3C;
+    margin-top: 10px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reviews {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #fff0f6;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviews h2 {
+    font-size: 1.8rem;
+    color: #d63384;
+    margin-bottom: 20px;
+  }
+  
+  .review-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  
+  .review-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .review {
+    flex: 0 0 280px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    border: 3px solid #ff85c0;
+    white-space: normal;
+  }
+  
+  .review::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 15px;
+    border-style: solid;
+    border-color: #ff85c0 transparent transparent transparent;
+  }
+  
+  .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff85c0;
+    margin-bottom: 10px;
+  }
+  
+  .review p {
+    font-size: 1rem;
+    color: #4A362A;
+    margin-bottom: 10px;
+  }
+  
+  .review span {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  

@@ -1,0 +1,63 @@
+.access-page {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .access-page h1 {
+    font-size: 2rem;
+    color: #4A362A;
+    margin-bottom: 20px;
+  }
+  
+  .map-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .map-container img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shop-info {
+    background: #fff0f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .shop-info h2 {
+    font-size: 1.5rem;
+    color: #d63384;
+  }
+  
+  .shop-info p {
+    font-size: 1rem;
+    color: #4A362A;
+    margin: 5px 0;
+  }
+  
+  .back-button {
+    margin-top: 30px;
+  }
+  
+  .back-button a {
+    text-decoration: none;
+    background-color: #ff85c0;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .back-button a:hover {
+    background-color: #d63384;
+  }
+  
