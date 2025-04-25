@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせ - カルモのひたい</title>
@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/contact.css">
-</head>
-<body>
-
+ </head>
+ <body>
     <header>
         <div class="menu-btn" onclick="toggleMenu()">≡</div>
         <nav id="navMenu">
@@ -38,28 +37,22 @@
             </ul>
         </nav>
     </header>
-
-<section class="contact">
-    <h2>お問い合わせ</h2>
-    <form id="contact-form">
+    <section class="contact">
+     <h2>お問い合わせ</h2>
+     <form id="contact-form">
         <label for="name">お名前</label>
         <input type="text" id="name" name="name" placeholder="例: 山田 太郎" required>
-
         <label for="email">メールアドレス</label>
         <input type="email" id="email" name="email" placeholder="例: example@gmail.com" required>
-
         <label for="message">メッセージ</label>
         <textarea id="message" name="message" rows="5" placeholder="お問い合わせ内容を入力してください" required></textarea>
-
         <button type="submit">送信する</button>
-    </form>
-</section>
+     </form>
+    </section>
+    <script src="script.js"></script>
 
-<script src="script.js"></script>
-
-<footer>
+   <footer>
     <p>© 2025 カルモのひたい</p>
-</footer>
-
-</body>
+   </footer> 
+ </body>
 </html>

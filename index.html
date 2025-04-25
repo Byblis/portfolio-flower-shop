@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>カルモのひたい</title>
@@ -15,49 +14,51 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
-</head>
-<body>
-
-<header>
-    <div class="menu-btn">≡</div> <!-- onclick を削除！ -->
-    <nav id="navMenu">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
+ </head>
+ <body>
+    <header class="site-header">
+        <div class="logo-area">
+          <h1>カルモのひたい</h1>
+        </div>
+        <nav aria-label="パンくずリスト">
+          <ul id="breadcrumb" class="breadcrumb"></ul>
+        </nav>
+      
+        <div class="menu-btn">≡</div>
+      
+        <nav id="navMenu">
+          <ul>
+            <li><a>HOME</a></li>
             <li class="has-dropdown">
-                <a href="#">商品</a>
-                <ul class="dropdown">
-                    <li><a href="#">花束</a></li>
-                    <li><a href="#">アレンジメント</a></li>
-                    <li><a href="#">ドライフラワー</a></li>
-                    <li><a href="#">プリザーブドフラワー</a></li>
-                    <li><a href="#">鉢植え</a></li>
-                </ul>
+              <a href="#">商品</a>
+              <ul class="dropdown">
+                <li><a href="bouquet.html">花束</a></li>
+                <li><a href="arrangement.html">アレンジメント</a></li>
+                <li><a href="dryflower.html">ドライフラワー</a></li>
+                <li><a href="preserved.html">プリザーブドフラワー</a></li>
+                <li><a href="potted.html">鉢植え</a></li>
+              </ul>
             </li>
             <li class="has-dropdown">
-                <a href="#">オーダー</a>
-                <ul class="dropdown">
-                    <li><a href="#">花束・アレンジメント</a></li>
-                    <li><a href="#">スタンド花</a></li>
-                    <li><a href="#">定期便</a></li>
-                    <li><a href="#">ブライダル</a></li>
-                    <li><a href="#">仏事</a></li>
-                </ul>
+              <a href="#">オーダー</a>
+              <ul class="dropdown">
+                <li><a href="#">花束・アレンジメント</a></li>
+                <li><a href="#">スタンド花</a></li>
+                <li><a href="#">定期便</a></li>
+                <li><a href="#">ブライダル</a></li>
+                <li><a href="#">仏事</a></li>
+              </ul>
             </li>
             <li><a href="contact.html">お問い合わせ</a></li>
             <li><a href="access.html">アクセス</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div id="shop-name">
-   <span>カ</span><span>ル</span><span>モ</span><span>の</span><span>ひ</span><span>たい</span>
-</div>
-
-
-<h2 class="subtitle">花とともに、日常に彩りを</h2>
-
-
-<main>
+          </ul>
+        </nav>
+      </header>
+  <div id="shop-name">
+  <span>カ</span><span>ル</span><span>モ</span><span>の</span><span>ひ</span><span>たい</span>
+  </div>
+  <h2 class="subtitle">花とともに、日常に彩りを</h2>
+  <main>
     <section class="slideshow">
         <div class="slides">
             <img src="images/photo1.jpg" alt="写真1">
@@ -67,13 +68,10 @@
             <img src="images/photo5.jpg" alt="写真5">
         </div>
     </section>
-
     <p class="site-intro">
         こだわりの花束とアレンジメントをお届けします。<br>
         お祝い、お悔やみ、日常の彩りにぴったりな花を厳選！
     </p>
-    
-
     <section class="news">
         <h2>NEWS</h2>
         <ul>
@@ -111,11 +109,9 @@
             <li>フローリストによる無料相談会開催💬</li>
         </ul>
     </section>
-
     <section class="monthly-recommendation">
         <h2>３月の花便り</h2>
     </section>
-
     <section class="seasonal-flowers">
         <!-- 🌼 1枚目：ミモザ（左→右） -->
         <div class="flower-item left">
@@ -125,8 +121,6 @@
                 <p>ふんわりとした優しい香りと、春の訪れを感じるミモザブーケ。</p>
             </div>
         </div>
-    
-        <!-- 🌷 2枚目：チューリップ（右→左） -->
         <div class="flower-item right">
             <div class="flower-text">
                 <h2>色とりどりのチューリップブーケで春を満喫</h2>
@@ -135,9 +129,6 @@
             <img src="images/tulip_bouquet.png" alt="チューリップの花束">
         </div>
     </section>
-    
-    
-
     <section class="reviews">
         <h2>お客様の声</h2>
         <div class="review-container">
@@ -200,12 +191,9 @@
             </div>        
         </div>
     </section>
-    
-<a href="contact.html" class="contact-button">お問い合わせはこちら</a>
-
-</main>
-
-<footer>
+  <a href="contact.html" class="contact-button">お問い合わせはこちら</a>
+  </main>
+  <footer>
     <div class="sns-links">
         <a href="https://twitter.com/あなたのアカウント" target="_blank">
             <i class="fa-brands fa-x-twitter"></i>
@@ -214,12 +202,8 @@
             <i class="fa-brands fa-instagram"></i>
         </a>
     </div>
-    
-    
-    
     <p>© 2025 カルモのひたい</p>
-</footer>
-<script src="cursor.js"></script>
-
-</body>
+  </footer>
+  <script src="cursor.js"></script>
+ </body>
 </html>
